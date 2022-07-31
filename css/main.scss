@@ -33,7 +33,7 @@ html, body {
 }
   
 body {
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
     background: var(--color-bg);
@@ -68,8 +68,9 @@ button {
 /* Common classes */ 
 
 .bg_container {
-    position: absolute;
-    z-index: -1;
+    position: relative;
+    z-index: -10;
+    left: 7em;
 }
 
 /* Base */ 
@@ -89,6 +90,7 @@ button {
     -ms-flex-positive: 1;
     flex-grow: 1;
     overflow: auto;
+    top: -70vmin;
 }
 
 .container {
