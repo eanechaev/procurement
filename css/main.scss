@@ -8,9 +8,10 @@
 }
   
 :root {
-    --jost-font: 'Jost', sans-serif;
-    --neucha-font: 'Neucha', cursive;
-    --nunitu-font: 'Nunito Sans', sans-serif;
+    --font-jost: 'Jost', sans-serif;
+    --font-neucha: 'Neucha', cursive;
+    --font-nunito: 'Nunito Sans', sans-serif;
+    --font-comforter: 'Comforter', cursive;
     --duration: 4.2s;
     --stagger: .65s;
     --easing: cubic-bezier(.36,.7,.25,1);
@@ -19,6 +20,8 @@
     --color-bg: #c9c6f2;
     --color-blue: #384969;
     --color-shadow: #211842;
+    --color-btn-blur: #4e3e8a;
+    --color-btn-non-blur: #2a2343;
 }
   
 html, body {
@@ -71,7 +74,7 @@ button {
 
 /* Base */ 
 
-.wrapper {
+.main_container {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -101,7 +104,7 @@ button {
 /* Hero */ 
 // hero_main_words
 .section_hero {
-    font-family: var(--jost-font);
+    font-family: var(--font-jost);
     font-size: 9vmin;
     position: relative;
     top: 13vmin;
@@ -130,7 +133,8 @@ button {
     grid-row-end: 1;
     text-align: end;
     font-size: 3.1em;
-    top: -0.15em;
+    right: 0.13em;
+    font-family: var(--font-comforter);
 }
 
 .hero_first_word {
@@ -168,8 +172,26 @@ button {
 
 .hero_button {
     margin-left: 12vmin;
-    padding: 2vmin 5vmin;
-    filter:blur(4px)
+    padding: 0.5vmin 5vmin 1vmin 5vmin;
+    display: inline-block;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    border: 3px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    color: var(--color-btn-blur);
+    font-size: 0.5em;
+    animation-name: helloHero;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-delay: 3000ms;
+    animation-fill-mode: forwards;
+    &:hover {
+      backdrop-filter: blur(0px);
+      background-color: rgba(255,255,255,0);
+      color: var(--color-btn-non-blur);
+    }
 }
 
 .hero_btn {
@@ -372,3 +394,14 @@ ul {
     }
   
   }
+
+/* MEDIA */ 
+
+@media (orientation: portrait) {
+  .bg_container {
+    top: 40vmin;
+  }
+  .section_hero {
+    left: -3em;
+  }
+}
