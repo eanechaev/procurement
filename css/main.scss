@@ -110,6 +110,7 @@ button {
     top: 13vmin;
     right: 24vmax;
     cursor: default;
+    z-index: 3;
 }
 
 @keyframes helloHero {
