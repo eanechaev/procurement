@@ -76,6 +76,8 @@ button {
 /* Base */ 
 
 .main_container {
+    transform: translateZ(1000px);
+    transform-style: preserve-3d;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
