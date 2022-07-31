@@ -33,7 +33,7 @@ html, body {
 }
   
 body {
-    // display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: var(--color-bg);
@@ -68,17 +68,14 @@ button {
 /* Common classes */ 
 
 .bg_container {
-    position: relative;
-    z-index: -10;
-    left: 7em;
-    transform: scale(0.955);
+    position: absolute;
+    z-index: -1;
+    -webkit-transform:translateZ(0px);
 }
 
 /* Base */ 
 
 .main_container {
-    transform: translateZ(1000px);
-    transform-style: preserve-3d;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93,11 +90,9 @@ button {
     -ms-flex-positive: 1;
     flex-grow: 1;
     overflow: auto;
-    top: -70vmin;
 }
 
 .container {
-  transform: translateZ(1000px);
     max-width: 1280px;
     padding: 0 20px;
     margin: 0 auto;
@@ -110,7 +105,6 @@ button {
 /* Hero */ 
 // hero_main_words
 .section_hero {
-  transform: translateZ(1000px);
     font-family: var(--font-jost);
     font-size: 9vmin;
     position: relative;
@@ -178,7 +172,6 @@ button {
 // hero_button
 
 .hero_button {
-  transform: translateZ(1000px);
     margin-left: 12vmin;
     padding: 0.5vmin 5vmin 1vmin 5vmin;
     display: inline-block;
@@ -324,6 +317,7 @@ ul {
   }
   
   .paper {
+    -webkit-transform:translateZ(0px);
     --segments: 5;
     --segment: calc(100% * 1 / var(--segments));
     position: absolute;
@@ -331,6 +325,7 @@ ul {
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: -20;
     
     
     animation: fly-in var(--duration) var(--easing) infinite;
