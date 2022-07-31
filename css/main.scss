@@ -13,7 +13,7 @@
     --nunitu-font: 'Nunito Sans', sans-serif;
     --duration: 4.2s;
     --stagger: .65s;
-    --easing: cubic-bezier(.36,.07,.25,1);
+    --easing: cubic-bezier(.36,.7,.25,1);
     --offscreen: 130vmax;
     //cubic-bezier(.5, 0, .4, 1);
     --color-bg: #c9c6f2;
@@ -343,10 +343,10 @@ ul {
   /* ---------------------------------- */
   
   .paper.-rogue {
-    transform-origin: top center -5vmin;
+    transform-origin: top center;
     
     .segment {
-      --rotate: 30deg;
+      --rotate: 35deg;
       animation-name: curve-rogue-paper;
   
       @keyframes curve-rogue-paper {
@@ -359,7 +359,7 @@ ul {
     > .segment {
       animation: inherit;
       animation-name: rogue-paper;
-      transform-origin: left top 20vmin;
+      transform-origin: left top;
     
       @keyframes rogue-paper {
         0%, 2% {
