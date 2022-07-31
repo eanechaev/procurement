@@ -97,6 +97,7 @@ button {
 }
 
 .container {
+  transform: translateZ(1000px);
     max-width: 1280px;
     padding: 0 20px;
     margin: 0 auto;
@@ -109,6 +110,7 @@ button {
 /* Hero */ 
 // hero_main_words
 .section_hero {
+  transform: translateZ(1000px);
     font-family: var(--font-jost);
     font-size: 9vmin;
     position: relative;
@@ -176,6 +178,7 @@ button {
 // hero_button
 
 .hero_button {
+  transform: translateZ(1000px);
     margin-left: 12vmin;
     padding: 0.5vmin 5vmin 1vmin 5vmin;
     display: inline-block;
