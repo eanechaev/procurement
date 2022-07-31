@@ -111,6 +111,7 @@ button {
     top: 13vmin;
     right: 24vmax;
     cursor: default;
+    z-index: 9999;
 }
 
 @keyframes helloHero {
@@ -126,6 +127,7 @@ button {
     opacity: 0;
     animation-delay: 300ms;
     animation-fill-mode: forwards;
+    z-index: 9999;
 }
 
 .hero_main_letter {
@@ -188,6 +190,7 @@ button {
     opacity: 0;
     animation-delay: 3000ms;
     animation-fill-mode: forwards;
+    z-index: 9999;
     &:hover {
       backdrop-filter: blur(0px);
       background-color: rgba(255,255,255,0);
