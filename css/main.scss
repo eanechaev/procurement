@@ -63,7 +63,6 @@ button {
     -webkit-box-shadow: none;
     box-shadow: none;
     cursor: pointer;
-    z-index: 9999;
 }
 
 /* Common classes */ 
@@ -74,29 +73,6 @@ button {
 }
 
 /* Base */ 
-
-.main_container {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 320px;
-    height: 100%;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    overflow: auto;
-}
-
-.container {
-    max-width: 1280px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
 
 .d-grid{
     display: grid;
@@ -109,10 +85,9 @@ button {
     font-family: var(--font-jost);
     font-size: 9vmin;
     position: relative;
-    top: 13vmin;
+    top: -7vmin;
     right: 24vmax;
     cursor: default;
-    z-index: 9999;
 }
 
 @keyframes helloHero {
@@ -128,7 +103,6 @@ button {
     opacity: 0;
     animation-delay: 300ms;
     animation-fill-mode: forwards;
-    z-index: 9999;
 }
 
 .hero_main_letter {
@@ -191,7 +165,6 @@ button {
     opacity: 0;
     animation-delay: 3000ms;
     animation-fill-mode: forwards;
-    z-index: 9999;
     &:hover {
       backdrop-filter: blur(0px);
       background-color: rgba(255,255,255,0);
@@ -426,9 +399,6 @@ ul {
 /* MEDIA */ 
 
 @media (orientation: portrait) {
-  .bg_container {
-    top: 40vmin;
-  }
   .section_hero {
     left: -3em;
   }
