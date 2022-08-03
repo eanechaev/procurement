@@ -22,6 +22,9 @@
     --color-shadow: #211842;
     --color-btn-blur: #4e3e8a;
     --color-btn-non-blur: #2a2343;
+
+/* BLOG ROOT */ 
+
 }
   
 html, body {
@@ -202,6 +205,7 @@ ul {
 }
 
 /* BG_animation */ 
+
   #app {
     height: 70vmin;
     width: 40vmin;
@@ -395,8 +399,6 @@ ul {
     }
   
   }
-
-/* MEDIA */ 
 
 @media (orientation: portrait) {
   .section_hero {
