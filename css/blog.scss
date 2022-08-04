@@ -701,14 +701,26 @@ ul {
 
 
 @media (max-width:768px) {
+    .logo {
+        font-size: 7vmin;
+    }
+    nav {
+        font-size: 2.7vmin;
+    }
     .container_blog{
         padding: 0 1.5vmin;
     }
     .article{
+        margin: 0 2vmin;
         min-height: 45vmin;
+        max-width: 90vmin;
     }
     .article-title {
-        font-size: 3.7vmin;
+        font-size: 4.5vmin;
+    }
+    .article-data {
+        font-size: 2.3vmin;
+        margin: 0 0 1vmin 0;
     }
     .headline {
         font-size: 2.2vmin;
@@ -718,12 +730,20 @@ ul {
         font-size: 2vmin;
     }
     .sidebar {
-        margin: 0 auto;
+        font-size: 3vmin;
+        margin: 0 4vmin;
     }
     .sidebar {
         .article-data {
-            margin: 2vmin 20vmin;
-            }
+            font-size: 3vmin;
+            margin: 2vmin 14vmin;
+        }
+        .featured-content-title {
+            font-size: 5.3vmin;
+        }
+        .article-title {
+            font-size: 4vmin;
+        }
     }
 
 
@@ -865,8 +885,8 @@ ul {
 }
   
 :root {
-    --duration: 9s;
-    --stagger: 2.65s;
+    --duration: 13s;
+    --stagger: 40.65s;
     --easing: cubic-bezier(.36,.07,.25,1);
     --offscreen: 230vmax;
 }
