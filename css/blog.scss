@@ -33,8 +33,13 @@ body {
 }
 
 header {
+    transform: translate3d(0,0,0) translateZ(1000px);
     background-color: rgba(237, 237, 237, 0.2);
     padding: 0.5em 0em;
+}
+
+section {
+    transform: translate3d(0,0,0) translateZ(1000px);
 }
 
 img, 
@@ -254,6 +259,7 @@ ul {
 /*modal*/
 
 .overlay {
+    transform: translate3d(0,0,0) translateZ(1000px);
     position: fixed;
     top: 0;
     left: 0;
