@@ -108,7 +108,7 @@ textarea {
 
 /*base*/
 .wrapper {
-    position: relative; // why?
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -122,6 +122,7 @@ textarea {
     -ms-flex-positive: 1;
     flex-grow: 1;
     overflow: auto;
+    transform-style: preserve-3d;
 }
    
 .container {
