@@ -1,51 +1,12 @@
 
 // jshint esversion: 6
 
-if (document.body.contains(document.querySelector('.media'))) {
-    const man = document.querySelector('.media');
-
-    man.addEventListener('click', () => {
-     let i = getRandomInt(14);
-     man.innerHTML = '<img src="images/man_switcher/man_' + i + '.svg" class="media_image" alt="random funny image">';
-    });
-    
-    function getRandomInt(max) {
-     return Math.floor(Math.random() * max);
-    }
-}
-
 // Grab elements
 const selectElement = selector => {
     const element = document.querySelector(selector);
     if(element) return element;
     throw new Error(`Something went wrong, make sure that ${selector} exists or is typed correctly.`);
 };
-
-// Open menu
-const menuOpenIcon = selectElement('.open-menu-icon'),
-      menuCloseIcon = selectElement('.close-menu-icon');
-
-const openMenu = () => {
-    const mobileMenu = selectElement('#menu');
-    mobileMenu.classList.add('activated');
-};
-
-const closeMenu = () => {
-    const mobileMenu = selectElement('#menu');
-    mobileMenu.classList.remove('activated');
-};
-
-menuOpenIcon.addEventListener('click', () => {
-    openMenu();
-});
-
-menuCloseIcon.addEventListener('click', () => {
-    closeMenu();
-});
-
-window.addEventListener('click', (e) => {
-    console.log(e.target);
-});
 
 // MODAL
 
@@ -90,12 +51,21 @@ document.addEventListener('keydown', (e) => {
 
 // join us text
 
-if (document.body.contains(document.querySelector('.join_us'))) {
-    const MODAL_TEXT_TRIGGER = document.querySelector('.join_us');
+// Switch theme/add to local storage
+const bodyElement = document.body;
+const themeToggleBtn = selectElement('#theme-toggle-btn');
+const currentTheme = localStorage.getItem('currentTheme');
 
-    MODAL_TEXT_TRIGGER.addEventListener('click', (e) => {
-        console.log(e.target);
-        MODAL.classList.add('show');
-        document.body.style.overflow = 'hidden';
-    });
+if (currentTheme) {
+    bodyElement.classList.add('dark-theme');
 }
+
+themeToggleBtn.addEventListener('click', () => {
+    bodyElement.classList.toggle('dark-theme');
+
+    if(bodyElement.classList.contains('dark-theme')){
+        localStorage.setItem('currentTheme', 'themeActive');
+    }else{
+        localStorage.removeItem('currentTheme');
+    }
+});
