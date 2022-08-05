@@ -710,7 +710,7 @@ ul {
     }
     nav {
         padding: 2vmin 0;
-        font-size: 3.5vmin;
+        font-size: 3vmin;
     }
     .container_blog{
         padding: 0 0;
@@ -722,13 +722,13 @@ ul {
     .article{
         margin: 0 0;
         min-height: 55vmin;
-        max-width: 95vmin;
+        max-width: 110vmin;
     }
     .article-title {
         font-size: 4.5vmin;
     }
     .article-data {
-        font-size: 2.3vmin;
+        font-size: 2.5vmin;
         margin: 0 0 1vmin 0;
     }
     .headline {
@@ -755,7 +755,10 @@ ul {
         }
     }
     .modal_links {
-        font-size: 4vmin;
+        font-size: 3.8vmin;
+        i {
+            font-size: 7vmin;
+        }
     }
 
     // .headline-description{
