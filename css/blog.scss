@@ -126,7 +126,7 @@ textarea {
 }
    
 .container {
-    max-width: 1280px;
+    max-width: 1300px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -559,7 +559,7 @@ ul {
     position: relative;
     // max-height: 37vmin;
     // min-height: 37vmin;
-    // min-width: 94vmin;
+    // min-width: 54vmin;
     overflow: hidden;
 }
 
@@ -585,6 +585,7 @@ ul {
     color: black;
     text-transform: uppercase;
     z-index: 1;
+    border-radius: 5px;
 }
 
 .article-data-container{
@@ -731,8 +732,8 @@ ul {
 
     .article{
         margin: 0 0;
-        min-height: 55vmin;
-        max-width: 110vmin;
+        min-height: 65vmin;
+        // max-width: 110vmin;
         border: 8px rgba(255, 255, 255, 0.159) solid;
     }
     .article-title {
@@ -797,10 +798,13 @@ ul {
 
     .DivWithScroll{
         background:rgba(22, 22, 48, 0.681);
-        overflow:scroll;
+        // margin-bottom: 3vmin;
+        overflow: scroll;
         overflow-y:hidden;
-        overflow-x:hidden;
-        margin-bottom: 3vmin;
+        &::-webkit-scrollbar {
+            height: .5vmin;  /* Remove scrollbar space */
+            background: transparent;  /* Optional: just make scrollbar invisible */
+        }
     }
 }
 
@@ -874,10 +878,45 @@ ul {
     .container_blog{
         padding: 0 2.5vmin;
     }
-    .article{
-        min-height: 26vmin;
-        min-width: 40vmin;
+    .featured-content{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(9, 1fr);
     }
+    .headline-banner{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .featured-article-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 6;
+    }
+
+    .featured-article-2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 6;
+    }
+    
+    .featured-article-3{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 10;
+    }
+
+    .featured-article-4{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 10;
+    }
+    // .article{
+    //     max-height: 40vmin;
+    //     min-width: 40vmin;
+    // }
     .article-title {
         font-size: 2.7vmin;
     }
@@ -907,6 +946,37 @@ ul {
             margin: 2vmin 0vmin;
             font-size: 2vmin;
             }
+    }
+    .headline-banner {
+        background: #8380B0;
+    }
+
+    .extra-menu__list {
+        display: contents;
+        font-size: 3vmin;
+        justify-content: center;
+        li {
+            color: var(--light-color-alt);
+            text-align: center;
+            padding: 1.5vmin 1vmin 0vmin 1vmin;
+            &:hover {
+                color: var(--light-color);
+            }
+            a {
+                min-width: 30vmin;
+            }
+        }
+    }
+
+    .DivWithScroll{
+        background:rgba(22, 22, 48, 0.681);
+        margin-bottom: 1.5vmin;
+        overflow: scroll;
+        overflow-y:hidden;
+        &::-webkit-scrollbar {
+            height: 2px;  /* Remove scrollbar space */
+            background: transparent;  /* Optional: just make scrollbar invisible */
+        }
     }
 }
 
@@ -1079,3 +1149,7 @@ ul {
 }
 
 
+.swiper {
+    width: 600px;
+    height: 30px;
+  }
