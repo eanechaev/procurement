@@ -809,6 +809,17 @@ ul {
             -webkit-overflow-scrolling: touch;
         }
     }
+
+    .extra-menu__list {
+        white-space: nowrap;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .extra-menu__list::-webkit-scrollbar {
+        height: 0;
+        display: none;
+    }
 }
 
 
@@ -980,6 +991,17 @@ ul {
             height: 0;  /* Remove scrollbar space */
             background: transparent;  /* Optional: just make scrollbar invisible */
         }
+    }
+
+    .extra-menu__list {
+        white-space: nowrap;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .extra-menu__list::-webkit-scrollbar {
+        height: 0;
+        display: none;
     }
 }
 
