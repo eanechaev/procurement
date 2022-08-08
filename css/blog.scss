@@ -802,6 +802,7 @@ ul {
         overflow: scroll;
         overflow-y:hidden;
         &::-webkit-scrollbar {
+            display: none;
             height: 0;  /* Remove scrollbar space */
             background: transparent;  /* Optional: just make scrollbar invisible */
         }
