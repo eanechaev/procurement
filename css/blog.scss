@@ -786,7 +786,7 @@ ul {
         li {
             color: var(--light-color-alt);
             text-align: center;
-            padding: 0.5vmin 1vmin 0.5vmin 1vmin;
+            padding: 0.5vmin 1vmin 1vmin 1vmin;
             &:hover {
                 color: var(--light-color);
             }
@@ -802,7 +802,7 @@ ul {
         overflow: scroll;
         overflow-y:hidden;
         &::-webkit-scrollbar {
-            height: .5vmin;  /* Remove scrollbar space */
+            height: 0;  /* Remove scrollbar space */
             background: transparent;  /* Optional: just make scrollbar invisible */
         }
     }
@@ -974,7 +974,7 @@ ul {
         overflow: scroll;
         overflow-y:hidden;
         &::-webkit-scrollbar {
-            height: 2px;  /* Remove scrollbar space */
+            height: 0;  /* Remove scrollbar space */
             background: transparent;  /* Optional: just make scrollbar invisible */
         }
     }
