@@ -801,10 +801,12 @@ ul {
         // margin-bottom: 3vmin;
         overflow: scroll;
         overflow-y:hidden;
+        white-space: nowrap;
         &::-webkit-scrollbar {
             display: none;
             height: 0;  /* Remove scrollbar space */
             background: transparent;  /* Optional: just make scrollbar invisible */
+            -webkit-overflow-scrolling: touch;
         }
     }
 }
