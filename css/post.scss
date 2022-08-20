@@ -649,3 +649,22 @@ ul {
     }
 }
 
+/* SAMPLES PAGE */ 
+
+.samples_section {
+    margin: 2vmin 5vmin;
+    p {
+        margin-top: 1vmin;
+        text-align: justify;
+        font-weight: 300;
+    }
+    h3 {
+        margin-top: 2vmin;
+    }
+    ul {
+        margin-left: 3vmin;
+        margin-top: 1vmin;
+        list-style-type: circle;
+        display: block;
+    }
+}
