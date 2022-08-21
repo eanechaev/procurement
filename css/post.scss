@@ -659,12 +659,25 @@ ul {
         font-weight: 300;
     }
     h3 {
-        margin-top: 2vmin;
+        margin-top: 6vmin;
     }
     ul {
-        margin-left: 3vmin;
         margin-top: 1vmin;
-        list-style-type: circle;
         display: block;
+    }
+    li {
+        margin-top: 2vmin;
+        &:hover {
+            color: var(--light-color-alt);
+        }
+        span {
+            font-size: smaller;
+        }
+
+    }
+}
+@media (orientation:portrait) {
+    .samples_section {
+        font-size: 3vmin;
     }
 }
