@@ -652,7 +652,8 @@ ul {
 /* SAMPLES PAGE */ 
 
 .samples_section {
-    margin: 2vmin 5vmin;
+    max-width: 1160px;
+    margin: 2vmin auto;
     p {
         margin-top: 1vmin;
         text-align: justify;
